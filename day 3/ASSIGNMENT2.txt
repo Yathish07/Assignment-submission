@@ -1,0 +1,46 @@
+package com.company;
+import java.util.Scanner;
+public class Main
+{
+
+    public static void main(String[] args)
+    {
+        Scanner sc=new Scanner(System.in);
+        float a,b,c,d,e;
+        System.out.println("Enter sub1 marks");
+        a=sc.nextFloat();
+        System.out.println("Enter sub2 marks");
+        b=sc.nextFloat();
+        System.out.println("Enter sub3 marks");
+        c=sc.nextFloat();
+        System.out.println("Enter sub4 marks");
+        d=sc.nextFloat();
+        System.out.println("Enter sub5 marks");
+        e=sc.nextFloat();
+
+        float per=(((a+b+c+d+e)/500f)*100);
+        System.out.println(per);
+
+            if(per>=50&&per<=60)
+            {
+                System.out.println("Your Grade is D and you have "+per+"percentage");
+            }
+            else if(per>60&&per<=70)
+            {
+                System.out.println("Your Grade is C and you have "+per+"percentage");
+            }
+            else if(per>70&&per<=80)
+            {
+                System.out.println("Your Grade is B and you have "+per+"percentage");
+            }
+            else if(per>80&&per<=100)
+            {
+                System.out.println("Your Grade is A and you have "+per+"percentage");
+            }
+            else {
+                System.out.println("you have failed");
+            }
+        }
+    }
+
+

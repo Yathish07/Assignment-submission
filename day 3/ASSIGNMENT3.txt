@@ -1,0 +1,64 @@
+package com.company;
+import java.util.Scanner;
+public class Main
+{
+
+    public static void main(String[] args)
+    {
+        Scanner sc=new Scanner(System.in);
+        String name;
+        int date,month,year,Month_sal;
+        System.out.println("Enter Employee name:");
+        name = sc.next();
+        System.out.println("Enter Birth Date of the Employee ");
+        date=sc.nextInt();
+        System.out.println("Enter Birth Month of the Employee ");
+        month=sc.nextInt();
+        System.out.println("Enter Birth year of the Employee ");
+        year=sc.nextInt();
+        System.out.println("Enter salary of the Employee ");
+        Month_sal=sc.nextInt();
+
+        int sal,age;
+        sal=Month_sal*12;
+        age=2020-year;
+        float tax;
+        if(sal>=500000)
+        {
+           tax=sal*0.20f;
+            System.out.println(name);
+            System.out.println(age);
+            System.out.println(sal);
+            System.out.println("Tax amount is "+tax);
+        }
+        else if (sal>=400000&&sal<500000)
+        {
+            tax=sal*0.15f;
+            System.out.println(name);
+            System.out.println(age);
+            System.out.println(sal);
+            System.out.println("Tax amount is "+tax);
+        }
+        else if(sal>=300000&&sal<400000)
+        {
+            tax=sal*0.10f;
+            System.out.println(name);
+            System.out.println(age);
+            System.out.println(sal);
+            System.out.println("Tax amount is "+tax);
+        }
+        else if(sal>=200000&&sal<300000)
+        {
+            tax=sal*0.05f;
+            System.out.println(name);
+            System.out.println(age);
+            System.out.println(sal);
+            System.out.println("Tax amount is "+tax);
+        }
+        else
+            System.out.println("No Tax");
+    }
+}
+
+
+
